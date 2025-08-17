@@ -28,6 +28,7 @@
 - `GET /` - Главная страница с информацией о сервисе
 - `GET /joke` - Получить последний анекдот
 - `GET /health` - Проверка здоровья сервиса (для Leapcell)
+- `GET /kaithhealthcheck` - Специальный endpoint для проверки здоровья Leapcell
 
 ### Структура проекта
 ```
@@ -60,6 +61,7 @@ test-api-1/
    - http://localhost:8080/ - главная страница
    - http://localhost:8080/joke - последний анекдот
    - http://localhost:8080/health - проверка здоровья
+   - http://localhost:8080/kaithhealthcheck - проверка здоровья для Leapcell
 
 ## Развертывание на Leapcell
 

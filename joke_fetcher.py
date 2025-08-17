@@ -104,6 +104,15 @@ def health_check():
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     })
 
+@app.route('/kaithhealthcheck')
+@app.route('/kaithheathcheck')
+def leapcell_health_check():
+    """Специальный endpoint для проверки здоровья сервиса Leapcell"""
+    return jsonify({
+        "status": "healthy",
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    })
+
 def start_background_thread():
     """Запуск фонового потока"""
     thread = threading.Thread(target=joke_worker, daemon=True)
