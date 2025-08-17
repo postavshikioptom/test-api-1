@@ -1,4 +1,5 @@
 runtime: python
 startCommand: python joke_fetcher.py
 buildCommand: pip install -r requirements.txt
+port: 8080
 memory: 512mb
